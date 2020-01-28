@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML TABLE GENERATOR</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="wrapper">
+     <div class="container"> 
+        <div class="table-criteria">
+            <div class="html-heading">HTML TABLE GENERATOR</div>
+            <div class="table-input">
+                <div>Number of rows:<input type="text" id="rows" class="rows" placeholder="Enter the number of rows">
+                </div>
+                <div>Number of columns:<input type="text" id="columns" class="columns" placeholder="Enter the number of cols">
+                </div>
+                <div>Table width in percentage:<input type="text" id="table-width" class="table-width" placeholder="Enter the table width">
+                </div> 
+                <div>Border width in pixels:<input type="text" id="border-width" class="border-width" placeholder="Enter the border width">
+                </div>
+                </div>
+                <div class="colors">
+                    <div class="body-background-color" id="body-background-color">
+                        Body background color <input type="color" id="body-background" value="#ffd6c6">
+                    </div>
+                    <div class="head-background-color" id="head-background-color">
+                        Head background color <input type="color" id="head-background" value="#000000">
+                    </div>
+                    <div class="body-font-color" id="body-font-color">
+                        Body font color <input type="color" id="body-color" value="#1c008c">
+                    </div>
+                    <div class="head-font-color" id="head-font-color">
+                        Head font color <input type="color" id="head-color" value="#ffffff">
+                    </div>
+                    <div class="border-colors" id="border-colors">
+                        Border color <input type="color" id="border-color" value="#000000">
+                    </div>
+                </div>  
+                <div class="fonts">
+                    <div class="collapse" id="collapse">
+                        Border collapse <input type="checkbox" id="border-collapse" value="border-collapse">
+                    </div>
+                    <div class="type" id="type">
+                        Font type 
+                        <select class="font-type" id="font-type">
+                            <option value="Arial">Arial</option>
+                            <option value="Roboto">Roboto</option>
+                            <option value="Times New Roman">Times New Roman</option>
+                            <option value="Times">Times</option>
+                            <option value="Courier New">Courier New</option>
+                        </select>
+                    </div>
+                    <div class="weight" id="weight">
+                        Font weight 
+                        <select class="font-weight" id="font-weight">
+                            <option value="100">100</option>
+                            <option value="700">700</option>
+                        </select>
+                    </div>  
+                    <div class="align" id="align">
+                        Text Align 
+                        <select class="text-align" id="text-align">
+                         <option value="center">Center</option>
+                         <option value="left">Left</option>
+                         <option value="right">Right</option>
+                        </select>
+                    </div>
+                    <div class="size" id="size">
+                        Font size <input type="text" id="font-size" class="font-size" placeholder="Enter the fontsize">
+                    </div>
+                </div>
+                    
+                <div class="buttons">
+                     <button id="generate-table" class="generate-table">Generate Table</button>
+                    <button id="get-code" class="get-code">Get code</button>
+                </div>  
+        </div>
+        <div class="create-table" id = 'create-table'></div>
+    </div>      
+    </div>
+    <script src="/main.js"></script>
+</body>
+</html>

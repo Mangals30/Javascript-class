@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang=“en”>
+​
+<head>
+    <title>DOM</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+​
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+​
+        .flex-container>div {
+            width: 200px;
+            background: gray;
+            margin: 5px;
+            text-align: center;
+        }
+        div.num {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px
+        }
+    </style>
+</head>
+​
+<body>
+    <div class='flex-container'>
+​
+    </div>
+    <button onclick="alert('I am clicked')">Click me</button>
+​
+​
+​
+    <script>
+        const button = document.querySelector('button')
+        console.log(button)
+        const numbers = [1, 2, 3, 4, 5, 6]
+        const flexContainer = document.querySelector('.flex-container')
+        for (let i = 0; i < 100; i++) {
+            const title = document.createElement('h1')
+            const div = document.createElement('div')
+            title.textContent = i
+            title.setAttribute('href', 'https://github.com/Asabeneh/JavaScript-for-Everyone')
+            div.setAttribute('class', 'num')
+            div.setAttribute('id', 'num-' + i)
+            div.style.border = '2px solid #444'
+            if (i % 2 == 0) {
+                div.style.background = 'green'
+            } else {
+                div.style.background = 'red'
+            }
+        
+            div.appendChild(title)
+            flexContainer.append(div)
+        }
+        
+    </script>
+</body>
+​
+</html>

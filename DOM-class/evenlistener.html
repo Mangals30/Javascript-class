@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Event Listener</title>
+</head>
+<body>
+    <div>
+        
+        <form onsubmit="submit">
+            <div style="margin: 10px;"></div>
+            Mass:    
+            <input type="text" id="mass" >
+            <p id="para"></p>
+            <button type="button" id = 'submit-button'>Submit</button>
+            </div>
+        </form>   
+    </div>
+    <script>
+    const input = document.querySelector('#mass')
+    const para = document.querySelector('#para')
+    const form = document.querySelector('form')
+    const submitButton = document.querySelector('#submit-button')
+
+
+    //const button1 = document.querySelector('button')
+    
+    input.addEventListener('keydown',(e) => {
+        if (e.keyCode==13) {
+            console.log(input.value)
+        }
+       
+    })
+
+
+    </script>
+</body>
+</html>

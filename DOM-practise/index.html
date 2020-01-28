@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM practise</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+​
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            
+            
+        }
+​
+        .flex-container>div {
+            width: 100%;
+            background: blue;
+            margin: 5px;
+            text-align: center;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #bmi{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title" id = 'id1'>First-Title</h1>
+    <h1 class="title" id = 'id2'>Second-Title</h1>
+    <h1 class="title" id = 'id3'>Third-Title</h1>
+    <h2 class="sub-title" id = 'subid1'>Subtitle1</h2>
+    <h2 class="sub-title" id = 'subid2'>Subtitle2</h2>
+    <h2 class="sub-title" id = 'subid3'>Subtitle3</h2>
+    <h2 class="sub-title" id = 'subid4'>Subtitle4</h2>
+    <h2 class="sub-title" id = 'subid5'>Subtitle5</h2>
+    <h2 class="sub-title" id = 'subid6'>Subtitle6</h2>
+    <div class='flex-container'></div>
+    <button>Click Me</button>
+    <div id="bmi">
+      <div style="padding: 10px;">
+          <input type="text" id="mass" placeholder="Mass in k/g"> 
+      </div>
+      <div style="padding: 10px;">
+          <input type="text" id="height" placeholder="Height in m">
+      </div>
+    </div>
+    <div id="calc">
+        <button id ='calculate' style="margin-left: 8%;">Calculate BMI</button>
+    </div>
+    <script src="/DOM-practise/main.js"></script>
+</body>
+</html>

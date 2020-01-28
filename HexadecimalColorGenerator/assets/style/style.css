@@ -1,0 +1,138 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+html {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.container {
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search-criteria {
+    background-color: #E4BCD3;
+    border-radius: 0.75rem;
+    width: 55rem;
+    text-align: center;
+    padding: 0.2rem;
+    
+}
+.hexa-heading {
+    color: #4C3D46;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif
+    
+}
+.search-input {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    justify-content: center;
+    
+}
+.number {
+width: 25rem;
+text-align: center;
+padding:0.5rem;
+border-radius: 0.5rem;
+
+
+}
+.buttons {
+    display: flex;
+    margin-left: 2rem;
+}
+.generate {
+ padding: 0.5rem;
+ border-radius: 0.5rem;
+ background-color: #90F79A;
+ width: 5rem;
+ margin-right: 0.2rem;
+}
+.stop {
+    
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color:#DD5E55;
+    width: 5rem;
+}
+.notes {
+    color: #4C3D46;
+}
+.search-result {
+    margin-top: 2rem;
+}
+.divColors {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.75rem;
+    width: 55rem;
+    padding: 1rem 4rem;
+    height: 6rem;
+    color:  #4C3D46;
+    font-weight: 750;
+
+    
+}
+
+.copy {
+    
+    width: 4rem;
+    height: 2rem;
+    text-align: center;
+    padding: 0.2rem;
+    border-radius: 0.38rem;
+}
+@media screen and (max-width: 878px){
+    .search-criteria {
+        width: 45rem;
+    }
+    .divColors {
+        width: 45rem;
+    }
+    .search-input {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .container {
+        padding: 0.5rem;
+    }
+    .search-criteria {
+        width: 23rem;
+    }
+
+    .divColors {
+        width: 23rem;
+    }
+    .search-input {
+        flex-direction: column;
+        align-content: center;
+        justify-items: center;
+    }
+    .number {
+        width: 16rem;
+    }
+    .buttons {
+        margin-top: 0.7rem;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0rem;
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pure and Impure Functions</title>
+</head>
+<body>
+    <script>
+        //Pure function
+        const square = n => n*n
+        console.log(square)
+        //Impure function
+        const generateId = (n=5) => {
+        const lettersAndNumbers = '0123456789abcdefghijklmnopqrstuvwxyz'
+        
+        let id = ''
+        for (let i = 0; i<n; i++) {
+            let index = Math.floor(Math.random() * lettersAndNumbers.length )
+            id = id + lettersAndNumbers[index]
+        }
+        return id
+        }
+        console.log(generateId())
+        
+    </script>
+</body>
+</html>
